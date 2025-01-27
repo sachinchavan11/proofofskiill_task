@@ -85,9 +85,9 @@ const UserManagementUI = () => {
           {tabs.map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-1 h-[70px] border-[1px] border-black ${
+              className={`px-4 py-1 h-[60px] border-[1px] rounded-sm font-bold border-black ${
                 activeTab === tab
-                  ? "border-b-2 bg-green-700  text-white"
+                  ? "border-b-2 bg-green-700 font-bold text-white"
                   : "text-gray-600 "
               }`}
               onClick={() => setActiveTab(tab)}
@@ -131,7 +131,7 @@ const CandidateNavigation = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-4 mt-4">
-      <p className="text-gray-600 text-sm font-medium">
+      <p className="text-gray-600 text-sm font-semibold text-[18px]">
         {candidateCount} Candidates
       </p>
 
